@@ -189,25 +189,8 @@ python main.py build --chunk-size 1000 --chunk-overlap 150
 
 构建完成后，`index/faiss/manifest.json` 会保存当前知识库的文档数、来源文件、Embedding 模型与分块参数。
 
-### 7.3 只测试检索，不调用大模型
 
-```bash
-python main.py search "多径效应为什么会影响水声测距精度？" --top-k 5
-```
-
-输出示意：
-
-```text
-[1] distance=0.3128 | underwater_localization.pdf | page=6
-......
-
-[2] distance=0.4017 | multipath_channel.pdf | page=3
-......
-```
-
-该模式特别适合调试 RAG：先确认“检索对不对”，再判断“生成对不对”。
-
-### 7.4 RAG 问答
+### 7.3 RAG 问答
 
 ```bash
 python main.py ask "声速剖面变化为什么会影响水下定位精度？"
@@ -227,13 +210,13 @@ python main.py ask "声速剖面变化为什么会影响水下定位精度？"
 [2] paper_b.pdf，第 7 页，chunk 31
 ```
 
-### 7.5 连续对话模式
+### 7.4 连续对话模式
 
 ```bash
 python main.py chat
 ```
 
-### 7.6 查看索引信息
+### 7.5 查看索引信息
 
 ```bash
 python main.py stats
@@ -261,56 +244,7 @@ streamlit run streamlit_app.py
 
 ---
 
-## 9. 检索效果评测
-
-项目提供一个简单的 Retrieval Hit@K 检查脚本。先根据自己的论文内容修改：
-
-```text
-eval_questions.example.json
-```
-
-例如：
-
-```json
-{
-  "question": "多径效应为什么会造成水声测距误差？",
-  "expected_keywords": ["多径", "时延", "相关"]
-}
-```
-
-然后运行：
-
-```bash
-python evaluate.py --cases eval_questions.example.json --top-k 5
-```
-
-示意输出：
-
-```text
-[HIT] 多径效应为什么会造成水声测距误差？
-...
-Keyword Hit@5: 8/10 = 80.00%
-```
-
-> 该指标只用于快速检查“相关证据是否被召回”，并不等价于完整的 RAG 回答质量评测。正式实验还可以增加 Recall@K、MRR、人工事实一致性评分或 LLM-as-a-Judge。
-
----
-
-## 10. 可做的参数对比
-
-为了让项目在面试里有真实实验内容，建议至少做三组对比并记录结果：
-
-| 实验项 | 建议取值 | 观察指标 |
-|---|---|---|
-| Chunk Size | 400 / 800 / 1200 | Hit@K、上下文完整度 |
-| Chunk Overlap | 50 / 120 / 200 | 跨段信息召回、冗余度 |
-| Top-K | 2 / 4 / 6 / 8 | 召回率、噪声、回答长度 |
-
-可以把实验结果补充到 README 的“实验结果”一节，这会比只写“优化过参数”更有说服力。
-
----
-
-## 11. 项目亮点
+## 9. 项目亮点
 
 1. **端到端 RAG 链路**：覆盖 PDF 解析、切分、Embedding、FAISS、检索、Prompt、LLM 生成；
 2. **可溯源**：保留 source / page / chunk_id，答案和原始证据可以对应；
@@ -321,7 +255,7 @@ Keyword Hit@5: 8/10 = 80.00%
 
 ---
 
-## 12. 后续优化方向
+## 10. 后续优化方向
 
 - 增加 BGE Reranker / Cross-Encoder，对初检 Top-N 结果二次排序；
 - 增加 Parent Document Retrieval，兼顾小块检索精度与大块上下文完整性；
@@ -333,15 +267,6 @@ Keyword Hit@5: 8/10 = 80.00%
 
 ---
 
-## 13. 简历描述建议
-
-**水声领域文献知识库 RAG 问答系统｜个人项目**
-
-面向水声、信号处理专业文献问答场景，基于 LangChain + BGE Embedding + FAISS 搭建轻量 RAG 系统。批量解析领域 PDF 论文并进行文本清洗、递归分块与元数据保留；构建本地向量索引，实现问题向量化、Top-K 语义检索、上下文组装和 Prompt 约束；接入 OpenAI-compatible LLM API，生成带文件名/页码来源的可追溯回答。通过 Retrieval-only 与 Hit@K 评测对不同 Chunk Size、Overlap、Top-K 参数进行对比，为降低专业领域问答中的无依据生成提供工程化方案。
-
-> 简历里只有在你真正跑过对应实验后，再写具体的提升百分比。例如“Hit@5 从 72% 提升到 84%”。不要先写一个没有实验记录支撑的数字。
-
----
 
 ## License
 
