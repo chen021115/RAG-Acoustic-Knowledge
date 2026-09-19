@@ -1,0 +1,8 @@
+# Add these lines to your existing .env (do not replace your current API key or embedding path):
+HYBRID_CANDIDATE_K=20
+RERANKER_MODEL=BAAI/bge-reranker-base
+RERANKER_DEVICE=cpu
+
+# Because your Hugging Face access previously timed out, after downloading the reranker locally,
+# change RERANKER_MODEL to the local directory, for example:
+# RERANKER_MODEL=D:/models/bge-reranker-base

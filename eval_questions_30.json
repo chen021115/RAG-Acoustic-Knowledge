@@ -1,0 +1,35 @@
+[
+  {"question":"TDOA水下定位的基本原理是什么？","expected_source_contains":["TDOA"]},
+  {"question":"未知声速会怎样影响TDOA/FDOA联合定位？","expected_source_contains":["TDOA","FDOA"]},
+  {"question":"传感器位置误差为什么会降低TDOA定位精度？","expected_source_contains":["TDOA","Sensor"]},
+  {"question":"Majorization-Minimization如何用于水下TDOA定位？","expected_source_contains":["Majorization","TDOA"]},
+  {"question":"NLOS条件为什么会给水下传感器网络定位带来偏差？","expected_source_contains":["Line-of-Sight","Localization"]},
+  {"question":"RSS测量如何用于水下声学传感器网络目标定位？","expected_source_contains":["RSS","Target_Localization"]},
+  {"question":"粗到细定位策略在水声通信接收机定位中的作用是什么？","expected_source_contains":["Coarse-to-Fine"]},
+  {"question":"移动目标协同定位中传播速度未知时如何处理？","expected_source_contains":["Co-Localization","Unknown"]},
+  {"question":"USBL定位的基本思想是什么？","expected_source_contains":["Ultra-Short","Baseline"]},
+  {"question":"全海深USBL定位面临哪些主要误差来源？","expected_source_contains":["Ultra-Short","Sea_Depth"]},
+
+  {"question":"水声多径效应是什么？","expected_source_contains":["Multipath","Matched_Field","Time-Reversal"]},
+  {"question":"游泳池实验中的边界反射为什么会形成多径？","expected_source_contains":["Swimming_Pool","Multipath"]},
+  {"question":"浅水波导中多径对被动声源定位有什么影响？","expected_source_contains":["Multipath-Dominant","Shallow"]},
+  {"question":"匹配场处理MFP的基本原理是什么？","expected_source_contains":["Matched_Field"]},
+  {"question":"压缩感知为什么可以用于匹配场成像？","expected_source_contains":["Matched_Field_Imaging","Compressed"]},
+  {"question":"短水听器阵列如何实现两个声源的匹配场定位？","expected_source_contains":["Two_Sound_Sources","Matched_Field"]},
+  {"question":"时间反转镜为什么能够用于水下声源定位？","expected_source_contains":["Time-Reversal"]},
+  {"question":"射线理论如何辅助被动时间反转定位？","expected_source_contains":["Ray_Theory","Time-Reversal"]},
+
+  {"question":"DOA估计在水下目标定位中的作用是什么？","expected_source_contains":["DOA"]},
+  {"question":"虚拟时间反转如何改善均匀线阵DOA估计？","expected_source_contains":["DOA","Virtual_Time_Reversal"]},
+  {"question":"信号自消除现象如何被用于水声DOA估计？","expected_source_contains":["Self-Cancellation","DOA"]},
+
+  {"question":"水声OFDM信道为什么具有稀疏多径特性？","expected_source_contains":["OFDM","Sparse"]},
+  {"question":"稀疏贝叶斯学习如何用于水声OFDM信道估计？","expected_source_contains":["Sparse_Bayesian","OFDM"]},
+  {"question":"时变水声OFDM信道的聚簇稀疏性是什么？","expected_source_contains":["Clustered-Sparse","Time-Varying"]},
+  {"question":"深度学习如何用于水声OFDM信道估计？","expected_source_contains":["Deep_Learning","OFDM"]},
+  {"question":"数据增强为什么可能改善水声OFDM信道估计？","expected_source_contains":["Data_Augmentation","OFDM"]},
+  {"question":"导频辅助OFDM在水声通信中的作用是什么？","expected_source_contains":["Pilot-Assisted","OFDM"]},
+  {"question":"浅水水声OFDM信道建模需要考虑哪些因素？","expected_source_contains":["Channel_Modelling","Shallow"]},
+  {"question":"信道知识对水声通信性能有什么作用？","expected_source_contains":["Channel_Knowledge","Communications"]},
+  {"question":"声速剖面SSP的测量与估计方法有哪些？","expected_source_contains":["SSP","Survey"]}
+]

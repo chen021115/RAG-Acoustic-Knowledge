@@ -1,0 +1,26 @@
+id,category,title,year,source,landing_url,pdf_url
+1,01_localization,"Underwater Source Localization Using TDOA and FDOA Measurements with Unknown Propagation Speed and Sensor Parameter Errors",2018,arXiv,https://arxiv.org/abs/1807.03534,https://arxiv.org/pdf/1807.03534
+2,01_localization,"Underwater Acoustic Source Seeking Using Time-Difference-of-Arrival Measurements",2024,arXiv,https://arxiv.org/abs/2402.17405,https://arxiv.org/pdf/2402.17405
+3,01_localization,"Direct Localization in Underwater Acoustics via Convolutional Neural Networks: A Data-Driven Approach",2022,arXiv,https://arxiv.org/abs/2207.10222,https://arxiv.org/pdf/2207.10222
+4,01_localization,"Efficient Underwater Acoustical Localization Method Based on TDOA with Sensor Position Errors",2023,MDPI,https://www.mdpi.com/2077-1312/11/4/861,https://www.mdpi.com/2077-1312/11/4/861/pdf
+5,01_localization,"Underwater TDOA Acoustical Location Based on Majorization-Minimization Optimization",2020,MDPI,https://www.mdpi.com/1424-8220/20/16/4457,https://www.mdpi.com/1424-8220/20/16/4457/pdf
+6,01_localization,"Underwater Wireless Sensor Network-Based Localization Method under Mixed Line-of-Sight/Non-Line-of-Sight Conditions",2023,MDPI,https://www.mdpi.com/2077-1312/11/9/1642,https://www.mdpi.com/2077-1312/11/9/1642/pdf
+7,01_localization,"Target Localization in Underwater Acoustic Sensor Networks Using RSS Measurements",2018,MDPI,https://www.mdpi.com/2076-3417/8/2/225,https://www.mdpi.com/2076-3417/8/2/225/pdf
+8,01_localization,"Coarse-to-Fine Localization of Underwater Acoustic Communication Receivers",2022,MDPI,https://www.mdpi.com/1424-8220/22/18/6968,https://www.mdpi.com/1424-8220/22/18/6968/pdf
+9,01_localization,"A Co-Localization Algorithm for Underwater Moving Targets with an Unknown Constant Signal Propagation Speed and Platform Errors",2024,MDPI,https://www.mdpi.com/1424-8220/24/10/3127,https://www.mdpi.com/1424-8220/24/10/3127/pdf
+10,01_localization,"A High-Precision, Ultra-Short Baseline Positioning Method for Full Sea Depth",2024,MDPI,https://www.mdpi.com/2077-1312/12/10/1689,https://www.mdpi.com/2077-1312/12/10/1689/pdf
+11,02_multipath_mfp,"Multipath Propagation of Acoustic Signal in a Swimming Pool—Source Localization Problem",2022,MDPI,https://www.mdpi.com/1424-8220/22/3/1162,https://www.mdpi.com/1424-8220/22/3/1162/pdf
+12,02_multipath_mfp,"Passive Source Localization Using Acoustic Intensity in Multipath-Dominant Shallow-Water Waveguide",2021,MDPI,https://www.mdpi.com/1424-8220/21/6/2198,https://www.mdpi.com/1424-8220/21/6/2198/pdf
+13,02_multipath_mfp,"Underwater Acoustic Matched Field Imaging Based on Compressed Sensing",2015,MDPI,https://www.mdpi.com/1424-8220/15/10/25577,https://www.mdpi.com/1424-8220/15/10/25577/pdf
+14,02_multipath_mfp,"Localization of Two Sound Sources Based on Compressed Matched Field Processing with a Short Hydrophone Array in the Deep Ocean",2019,MDPI,https://www.mdpi.com/1424-8220/19/17/3810,https://www.mdpi.com/1424-8220/19/17/3810/pdf
+15,02_multipath_mfp,"Underwater Sound Source Localization Based on Passive Time-Reversal Mirror and Ray Theory",2022,MDPI,https://www.mdpi.com/1424-8220/22/6/2420,https://www.mdpi.com/1424-8220/22/6/2420/pdf
+16,03_signal_processing,"DOA Estimation for Underwater Target by Active Detection on Virtual Time Reversal Using a Uniform Linear Array",2018,MDPI,https://www.mdpi.com/1424-8220/18/8/2458,https://www.mdpi.com/1424-8220/18/8/2458/pdf
+17,03_signal_processing,"In-Depth Exploration of Signal Self-Cancellation Phenomenon to Achieve DOA Estimation of Underwater Acoustic Sources",2019,MDPI,https://www.mdpi.com/2076-3417/9/3/570,https://www.mdpi.com/2076-3417/9/3/570/pdf
+18,04_channel_communication,"Fast Sparse Bayesian Learning-Based Channel Estimation for Underwater Acoustic OFDM Systems",2022,MDPI,https://www.mdpi.com/2076-3417/12/19/10175,https://www.mdpi.com/2076-3417/12/19/10175/pdf
+19,04_channel_communication,"Bayesian Learning-Based Clustered-Sparse Channel Estimation for Time-Varying Underwater Acoustic OFDM Communication",2021,MDPI,https://www.mdpi.com/1424-8220/21/14/4889,https://www.mdpi.com/1424-8220/21/14/4889/pdf
+20,04_channel_communication,"Underwater-Acoustic-OFDM Channel Estimation Based on Deep Learning and Data Augmentation",2024,MDPI,https://www.mdpi.com/2079-9292/13/4/689,https://www.mdpi.com/2079-9292/13/4/689/pdf
+21,04_channel_communication,"Pilot-Assisted OFDM for Underwater Acoustic Communication",2021,MDPI,https://www.mdpi.com/2077-1312/9/12/1382,https://www.mdpi.com/2077-1312/9/12/1382/pdf
+22,04_channel_communication,"Channel Modelling and Estimation for Shallow Underwater Acoustic OFDM Communication via Simulation Platform",2019,MDPI,https://www.mdpi.com/2076-3417/9/3/447,https://www.mdpi.com/2076-3417/9/3/447/pdf
+23,05_surveys,"On the Effect of Channel Knowledge in Underwater Acoustic Communications: Estimation, Prediction and Protocol",2023,MDPI,https://www.mdpi.com/2079-9292/12/7/1552,https://www.mdpi.com/2079-9292/12/7/1552/pdf
+24,05_surveys,"Underwater SSP Measurement and Estimation: A Survey",2024,MDPI,https://www.mdpi.com/2077-1312/12/12/2356,https://www.mdpi.com/2077-1312/12/12/2356/pdf
+25,05_surveys,"Artificial Intelligence-Based Underwater Acoustic Target Recognition: A Survey",2024,MDPI,https://www.mdpi.com/2072-4292/16/17/3333,https://www.mdpi.com/2072-4292/16/17/3333/pdf

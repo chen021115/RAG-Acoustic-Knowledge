@@ -1,0 +1,2 @@
+# Only the extra package required by the V2 incremental upgrade.
+rank-bm25>=0.2.2

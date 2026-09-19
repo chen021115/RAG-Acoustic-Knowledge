@@ -1,0 +1,47 @@
+# API keys / secrets
+.env
+
+# Keep example config
+!.env.example
+
+# Backup files
+config_old.py
+main_old.py
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+
+# Local models
+models/
+bge-large-zh-v1.5/
+bge-reranker-base/
+
+# Generated vector indexes
+index/
+*.faiss
+*.pkl
+
+# PDF papers
+docs/**/*.pdf
+docs/*.pdf
+
+# Logs / caches
+*.log
+.cache/
+.pytest_cache/
+
+# OS
+.DS_Store
+Thumbs.db
